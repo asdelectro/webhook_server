@@ -3,7 +3,7 @@ from mysql.connector import Error
 from datetime import datetime
 import os
 from dotenv import load_dotenv
-
+import base64 
 load_dotenv()
 
 class RadiacodeManager:
@@ -208,6 +208,67 @@ class RadiacodeManager:
                     f"Manufacturing date for {serial}: {manuf_date.isoformat() if manuf_date else 'Not set'}"
                 )
                 return manuf_date
+            else:
+                print(f"Device with serial number {serial} not found")
+                return None
+
+        except Error as e:
+            print(f"Database error: {e}")
+            return None
+        except Exception as e:
+            print(f"General error: {e}")
+            return None
+        finally:
+            if "connection" in locals():
+                if connection.is_connected():
+                    cursor.close()
+                    connection.close()
+
+    def ReadManufacturingDateAll(self, serial):
+        """
+        Read ALL fields for specified serial number
+
+        Args:
+            serial: device serial number (str)
+
+        Returns:
+            dict or None: all device fields if found, None if not found
+        """
+        try:
+            connection = self._get_connection()
+            cursor = connection.cursor(dictionary=True)
+
+            query = """
+            SELECT * 
+            FROM radiacode 
+            WHERE SerialNumber = %s
+            """
+
+            cursor.execute(query, (serial,))
+            result = cursor.fetchone()
+
+            if result:
+                print(f"All data for {serial}:")
+                
+                # Конвертируем все значения для JSON совместимости
+                formatted_result = {}
+                for key, value in result.items():
+                    if isinstance(value, datetime):
+                        formatted_result[key] = value.isoformat()
+                        print(f"  {key}: {value.isoformat()}")
+                    elif isinstance(value, bytes):
+                        # Конвертируем bytes в base64 строку или в hex
+                        import base64
+                        formatted_result[key] = base64.b64encode(value).decode('utf-8')
+                        print(f"  {key}: <bytes data, length: {len(value)}>")
+                    elif value is None:
+                        formatted_result[key] = None
+                        print(f"  {key}: None")
+                    else:
+                        formatted_result[key] = value
+                        print(f"  {key}: {value}")
+                
+                return formatted_result
             else:
                 print(f"Device with serial number {serial} not found")
                 return None

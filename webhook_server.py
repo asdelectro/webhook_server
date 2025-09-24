@@ -217,6 +217,49 @@ def get_devices():
             'error': str(e),
             'devices': []
         }), 500
+    
+
+@app.route('/api/getalldevices/<serial>', methods=['GET'])
+def get_device_by_serial(serial):
+    """
+    GET endpoint для получения ВСЕХ полей устройства по серийному номеру
+    URL: localhost:3000/api/devices/RC-103G-001665
+    """
+    try:
+        if not serial or not serial.strip():
+            return jsonify({
+                "success": False, 
+                "message": "Серийный номер пустой",
+                "serial": serial
+            }), 400
+
+        serial = serial.strip()
+        logger.info(f"Запрос всех данных для устройства: {serial}")
+
+        # Используем функцию ReadManufacturingDateAll
+        device_data = manager.ReadManufacturingDateAll(serial)
+        
+        if device_data is None:
+            return jsonify({
+                "success": False,
+                "message": "Устройство не найдено",
+                "serial": serial
+            }), 404
+
+        return jsonify({
+            "success": True,
+            "serial": serial,
+            "device_data": device_data,
+            "message": f"Найдено устройство {serial}"
+        })
+
+    except Exception as e:
+        logger.error(f"Ошибка получения данных для {serial}: {e}")
+        return jsonify({
+            "success": False,
+            "message": f"Ошибка сервера: {str(e)}",
+            "serial": serial
+        }), 500    
 
 @app.route('/api/check-status', methods=['POST'])
 def check_device_status():
