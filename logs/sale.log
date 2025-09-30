@@ -1,0 +1,278 @@
+2025-09-29 15:55:20,860 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00063FF025E5F681F445000B6E270002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:62539', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759150520792, 'qos': 2, 'timestamp': 1759150520792, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-29 15:55:20,860 - INFO - Данные получены из топика: sale/ready
+2025-09-29 15:55:20,860 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-29 15:55:20,860 - WARNING - Barcode must contain a hyphen (-)
+2025-09-29 15:55:34,730 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00063FF026B9A8D1F445000B6E270003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:62539', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759150534666, 'qos': 2, 'timestamp': 1759150534666, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-29 15:55:34,730 - INFO - Данные получены из топика: sale/ready
+2025-09-29 15:55:34,730 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-29 15:55:34,730 - WARNING - Barcode must contain a hyphen (-)
+2025-09-29 15:55:48,926 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00063FF027922F98F445000B6E270004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:62539', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759150548856, 'qos': 2, 'timestamp': 1759150548856, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-29 15:55:48,926 - INFO - Данные получены из топика: sale/ready
+2025-09-29 15:55:48,926 - INFO - Парсинг: barcode=RC-102-011242, topic=sale/ready
+2025-09-29 15:55:50,478 - INFO - Успешно записана sale дата для: RC-102-011242 из топика: sale/ready
+2025-09-30 13:36:20,081 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400252971E3BF4450010055D0002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:50601', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759228580011, 'qos': 2, 'timestamp': 1759228580011, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:36:20,081 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:36:20,081 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:36:20,081 - WARNING - Barcode must contain a hyphen (-)
+2025-09-30 13:36:32,561 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400253558F25F4450010055D0003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:50601', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759228592492, 'qos': 2, 'timestamp': 1759228592492, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:36:32,561 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:36:32,561 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:36:32,561 - WARNING - Barcode must contain a hyphen (-)
+2025-09-30 13:40:17,742 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400260C1A6A7F445001008440002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759228817680, 'qos': 2, 'timestamp': 1759228817680, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:40:17,742 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:40:17,742 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:40:17,742 - WARNING - Barcode must contain a hyphen (-)
+2025-09-30 13:41:26,242 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400264D6E949F445001008440003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759228886182, 'qos': 2, 'timestamp': 1759228886182, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:41:26,242 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:41:26,242 - INFO - Парсинг: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 13:41:27,754 - INFO - Успешно записана sale дата для: RC-103-014352 из топика: sale/ready
+2025-09-30 13:45:37,123 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400273CB01D9F445001008440004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229137060, 'qos': 2, 'timestamp': 1759229137060, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:45:37,123 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:45:37,123 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:45:37,123 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:46:40,663 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640027794995BF445001008440005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229200603, 'qos': 2, 'timestamp': 1759229200603, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:46:40,663 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:46:40,663 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:46:40,663 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:46:47,052 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400277F61AE0F445001008440006', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229206993, 'qos': 2, 'timestamp': 1759229206993, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:46:47,052 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:46:47,052 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:46:47,052 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:46:54,708 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002786AE1BDF445001008440007', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000002"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229214646, 'qos': 2, 'timestamp': 1759229214646, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:46:54,708 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:46:54,708 - INFO - Парсинг: barcode=FBA18Z5238Q2U000002, topic=sale/ready
+2025-09-30 13:46:54,708 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:47:07,912 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640027934435DF445001008440008', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229227844, 'qos': 2, 'timestamp': 1759229227844, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:47:07,912 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:47:07,912 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:47:07,912 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:48:25,137 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640027DCEB7E6F445001008440009', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229305075, 'qos': 2, 'timestamp': 1759229305075, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:48:25,137 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:48:25,137 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:48:25,137 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:48:27,962 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640027DF9B3E4F44500100844000A', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229307892, 'qos': 2, 'timestamp': 1759229307892, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:48:27,962 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:48:27,962 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:48:27,962 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:48:30,671 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640027E231DA0F44500100844000B', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229310606, 'qos': 2, 'timestamp': 1759229310606, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:48:30,671 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:48:30,671 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:48:30,671 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:49:20,689 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400280397ABBF44500100844000C', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229345626, 'qos': 2, 'timestamp': 1759229345626, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:49:20,689 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:49:20,689 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:49:20,689 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:50:18,658 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640028492E046F44500100844000D', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229418594, 'qos': 2, 'timestamp': 1759229418594, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:50:18,659 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:50:18,659 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:50:18,659 - INFO - Валидация OK: type=Shopify, serial=884179351180
+2025-09-30 13:50:19,425 - ERROR - Ошибка записи sale даты для: 884179351180
+2025-09-30 13:50:40,346 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400285DDD144F44500100844000E', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229440282, 'qos': 2, 'timestamp': 1759229440283, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:50:40,346 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:50:40,346 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:50:40,347 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:50:45,967 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640028633812EF44500100844000F', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229445898, 'qos': 2, 'timestamp': 1759229445898, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:50:45,967 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:50:45,968 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:50:45,968 - INFO - Валидация OK: type=Shopify, serial=884179351180
+2025-09-30 13:50:46,668 - ERROR - Ошибка записи sale даты для: 884179351180
+2025-09-30 13:50:55,463 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400286C45C46F445001008440010', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229455391, 'qos': 2, 'timestamp': 1759229455391, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:50:55,464 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:50:55,464 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:50:55,464 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:51:01,547 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400287213838F445001008440011', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229461477, 'qos': 2, 'timestamp': 1759229461477, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:51:01,547 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:51:01,547 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:51:01,547 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:52:31,853 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640028C834248F445001008440012', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229551788, 'qos': 2, 'timestamp': 1759229551788, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:52:31,853 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:52:31,853 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:52:31,853 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:52:37,987 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640028CE0D047F445001008440013', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000002"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229557919, 'qos': 2, 'timestamp': 1759229557919, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:52:37,987 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:52:37,987 - INFO - Парсинг: barcode=FBA18Z5238Q2U000002, topic=sale/ready
+2025-09-30 13:52:37,987 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:52:40,792 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640028D0B8FC2F445001008440014', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229560721, 'qos': 2, 'timestamp': 1759229560721, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:52:40,792 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:52:40,792 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:52:40,792 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:54:16,019 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400292B8B6B4F445001008440015', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229655955, 'qos': 2, 'timestamp': 1759229655955, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:54:16,019 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:54:16,019 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:54:16,019 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:54:25,627 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002934B3F95F445001008440016', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229665558, 'qos': 2, 'timestamp': 1759229665558, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:54:25,627 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:54:25,627 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:54:25,627 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:55:53,605 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640029889ABCCF445001008440017', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229753535, 'qos': 2, 'timestamp': 1759229753535, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:55:53,605 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:55:53,605 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:55:53,605 - WARNING - Ошибка валидации: No matching pattern for barcode length 34
+2025-09-30 13:56:36,901 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640029B1E668BF445001008440018', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229796837, 'qos': 2, 'timestamp': 1759229796837, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:56:36,901 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:56:36,901 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 13:56:36,901 - INFO - Валидация OK: type=Shopify, serial=884179351180
+2025-09-30 13:56:37,740 - ERROR - Ошибка записи sale даты для: 884179351180
+2025-09-30 13:56:52,615 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640029C0E33CFF445001008440019', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229812552, 'qos': 2, 'timestamp': 1759229812552, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:56:52,615 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:56:52,615 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:56:52,615 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:57:15,214 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640029D671452F44500100844001A', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229835154, 'qos': 2, 'timestamp': 1759229835154, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:57:15,214 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:57:15,214 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 13:57:15,214 - WARNING - Ошибка валидации: No matching pattern for barcode length 19
+2025-09-30 13:59:49,124 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002A6938373F44500100844001B', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229989061, 'qos': 2, 'timestamp': 1759229989061, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:59:49,124 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:59:49,124 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:59:49,124 - INFO - Валидация OK: type=Amazon, serial=FBA15KVQ8S63
+2025-09-30 13:59:49,924 - ERROR - Ошибка записи sale даты для: FBA15KVQ8S63
+2025-09-30 13:59:59,799 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002A7365804F44500100844001C', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759229999732, 'qos': 2, 'timestamp': 1759229999732, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 13:59:59,799 - INFO - Данные получены из топика: sale/ready
+2025-09-30 13:59:59,799 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 13:59:59,799 - INFO - Валидация OK: type=Amazon, serial=FBA15KVQ8S63
+2025-09-30 14:00:00,529 - ERROR - Ошибка записи sale даты для: FBA15KVQ8S63
+2025-09-30 14:00:10,187 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002A7D4CE90F44500100844001D', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230010117, 'qos': 2, 'timestamp': 1759230010117, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:00:10,187 - INFO - Данные получены из топика: sale/ready
+2025-09-30 14:00:10,187 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 14:00:10,187 - INFO - Валидация OK: type=Amazon, serial=FBA18Z5238Q2
+2025-09-30 14:00:10,844 - ERROR - Ошибка записи sale даты для: FBA18Z5238Q2
+2025-09-30 14:00:14,483 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002A8167F13F44500100844001E', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000002"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230014422, 'qos': 2, 'timestamp': 1759230014422, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:00:14,483 - INFO - Данные получены из топика: sale/ready
+2025-09-30 14:00:14,483 - INFO - Парсинг: barcode=FBA18Z5238Q2U000002, topic=sale/ready
+2025-09-30 14:00:14,483 - INFO - Валидация OK: type=Amazon, serial=FBA18Z5238Q2
+2025-09-30 14:00:15,276 - ERROR - Ошибка записи sale даты для: FBA18Z5238Q2
+2025-09-30 14:00:19,468 - INFO - Получены данные: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002A86284D1F44500100844001F', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230019405, 'qos': 2, 'timestamp': 1759230019405, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:00:19,468 - INFO - Данные получены из топика: sale/ready
+2025-09-30 14:00:19,468 - INFO - Парсинг: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 14:00:19,468 - INFO - Валидация OK: type=Shopify, serial=884179351180
+2025-09-30 14:00:20,278 - ERROR - Ошибка записи sale даты для: 884179351180
+2025-09-30 14:02:13,972 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002AF359BFDF445001008440020', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230133902, 'qos': 2, 'timestamp': 1759230133902, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:02:13,972 - INFO - Data from topic: sale/ready
+2025-09-30 14:02:13,972 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 14:02:13,972 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-09-30 14:02:21,084 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002AFA24649F445001008440021', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000002"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230141023, 'qos': 2, 'timestamp': 1759230141023, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:02:21,084 - INFO - Data from topic: sale/ready
+2025-09-30 14:02:21,084 - INFO - Parsing: barcode=FBA18Z5238Q2U000002, topic=sale/ready
+2025-09-30 14:02:21,084 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-09-30 14:03:00,894 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002B20190B4F445001008440022', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230180823, 'qos': 2, 'timestamp': 1759230180823, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:03:00,894 - INFO - Data from topic: sale/ready
+2025-09-30 14:03:00,894 - INFO - Parsing: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-09-30 14:03:00,894 - INFO - Validation OK: type=Shopify, serial=884179351180
+2025-09-30 14:03:04,745 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002B23C55E0F445001008440023', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230184674, 'qos': 2, 'timestamp': 1759230184674, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:03:04,745 - INFO - Data from topic: sale/ready
+2025-09-30 14:03:04,745 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 14:03:04,745 - WARNING - Validation error: No matching pattern for barcode length 13
+2025-09-30 14:04:50,596 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002B88B81DBF445001008440024', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230290526, 'qos': 2, 'timestamp': 1759230290526, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:04:50,596 - INFO - Data from topic: sale/ready
+2025-09-30 14:04:50,596 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 14:04:50,597 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 14:04:57,604 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002B8F65884F445001008440025', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230297528, 'qos': 2, 'timestamp': 1759230297528, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:04:57,604 - INFO - Data from topic: sale/ready
+2025-09-30 14:04:57,604 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 14:04:57,604 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-09-30 14:04:59,764 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064002B9175E83F445001008440026', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:64009', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759230299692, 'qos': 2, 'timestamp': 1759230299692, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 14:04:59,764 - INFO - Data from topic: sale/ready
+2025-09-30 14:04:59,764 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-09-30 14:04:59,764 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-09-30 16:06:50,477 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640046CD7DB72F44500106FEF0004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759237610396, 'qos': 2, 'timestamp': 1759237610396, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:06:50,477 - INFO - Data from topic: sale/ready
+2025-09-30 16:06:50,477 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-09-30 16:06:50,477 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-09-30 16:06:58,042 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640046D4B6520F44500106FEF0005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759237617968, 'qos': 2, 'timestamp': 1759237617968, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:06:58,042 - INFO - Data from topic: sale/ready
+2025-09-30 16:06:58,042 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:06:58,042 - WARNING - Validation error: No matching pattern for barcode length 13
+2025-09-30 16:07:12,024 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640046E209E95F44500106FEF0006', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759237631942, 'qos': 2, 'timestamp': 1759237631942, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:07:12,024 - INFO - Data from topic: sale/ready
+2025-09-30 16:07:12,024 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:07:12,024 - WARNING - Validation error: No matching pattern for barcode length 13
+2025-09-30 16:07:37,067 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640046F9EEA56F44500106FEF0007', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759237656996, 'qos': 2, 'timestamp': 1759237656996, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:07:37,067 - INFO - Data from topic: sale/ready
+2025-09-30 16:07:37,067 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:07:37,067 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 16:07:37,091 - INFO - InvenTree plugin: Sent to InvenTree plugin
+2025-09-30 16:08:05,594 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400471520C7AF44500106FEF0008', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759237685513, 'qos': 2, 'timestamp': 1759237685513, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:08:05,594 - INFO - Data from topic: sale/ready
+2025-09-30 16:08:05,594 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:08:05,594 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 16:08:05,608 - INFO - InvenTree plugin: Sent to InvenTree plugin
+2025-09-30 16:23:18,538 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064004A7BC815AF44500106FEF0009', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:55324', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759238598459, 'qos': 2, 'timestamp': 1759238598459, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:23:18,538 - INFO - Data from topic: sale/ready
+2025-09-30 16:23:18,538 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:23:18,538 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 16:23:18,557 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 16:56:06,484 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640051D090616F445001095EB0002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759240566408, 'qos': 2, 'timestamp': 1759240566408, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 16:56:06,484 - INFO - Data from topic: sale/ready
+2025-09-30 16:56:06,484 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 16:56:06,484 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 16:56:06,504 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:03:31,374 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005378D6BDAF445001095EB0003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241011293, 'qos': 2, 'timestamp': 1759241011293, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:03:31,374 - INFO - Data from topic: sale/ready
+2025-09-30 17:03:31,374 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:03:31,374 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:03:31,394 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:03:43,280 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640053843394CF445001095EB0004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241023207, 'qos': 2, 'timestamp': 1759241023207, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:03:43,280 - INFO - Data from topic: sale/ready
+2025-09-30 17:03:43,280 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:03:43,280 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:03:43,294 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:03:54,681 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400538F133AAF445001095EB0005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241034609, 'qos': 2, 'timestamp': 1759241034609, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:03:54,681 - INFO - Data from topic: sale/ready
+2025-09-30 17:03:54,681 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:03:54,681 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:03:54,699 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:04:02,649 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005396AA301F445001095EB0006', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241042567, 'qos': 2, 'timestamp': 1759241042568, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:04:02,649 - INFO - Data from topic: sale/ready
+2025-09-30 17:04:02,649 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:04:02,650 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:04:02,665 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:16:48,290 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005670D868DF445001095EB0007', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241808217, 'qos': 2, 'timestamp': 1759241808217, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:16:48,290 - INFO - Data from topic: sale/ready
+2025-09-30 17:16:48,290 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:16:48,290 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:16:48,309 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:17:09,651 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005685351E6F445001095EB0008', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241829568, 'qos': 2, 'timestamp': 1759241829569, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:17:09,651 - INFO - Data from topic: sale/ready
+2025-09-30 17:17:09,651 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:17:09,651 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:17:09,667 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:17:26,914 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005695A97BAF445001095EB0009', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759241846822, 'qos': 2, 'timestamp': 1759241846822, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:17:26,914 - INFO - Data from topic: sale/ready
+2025-09-30 17:17:26,914 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:17:26,914 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:17:26,929 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:27:15,297 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640058C6CC689F445001095EB000A', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242435217, 'qos': 2, 'timestamp': 1759242435217, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:27:15,297 - INFO - Data from topic: sale/ready
+2025-09-30 17:27:15,297 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:27:15,297 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:27:15,316 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:27:56,791 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640058EE5EF0DF445001095EB000B', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242476711, 'qos': 2, 'timestamp': 1759242476711, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:27:56,792 - INFO - Data from topic: sale/ready
+2025-09-30 17:27:56,792 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:27:56,792 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:27:56,812 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:28:05,903 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640058F71091FF445001095EB000C', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242485827, 'qos': 2, 'timestamp': 1759242485827, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:28:05,903 - INFO - Data from topic: sale/ready
+2025-09-30 17:28:05,903 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-09-30 17:28:05,903 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-09-30 17:28:05,918 - INFO - InvenTree plugin: HTTP 404
+2025-09-30 17:28:30,967 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400590EF764EF445001095EB000D', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242510890, 'qos': 2, 'timestamp': 1759242510890, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:28:30,968 - INFO - Data from topic: sale/ready
+2025-09-30 17:28:30,968 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:28:30,968 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:28:30,983 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:28:47,780 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006400591EFEF30F445001095EB000E', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242527698, 'qos': 2, 'timestamp': 1759242527698, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:28:47,780 - INFO - Data from topic: sale/ready
+2025-09-30 17:28:47,780 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:28:47,780 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:28:47,798 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:28:52,948 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005923EC80BF445001095EB000F', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242532866, 'qos': 2, 'timestamp': 1759242532866, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:28:52,948 - INFO - Data from topic: sale/ready
+2025-09-30 17:28:52,948 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:28:52,948 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:28:52,968 - INFO - InvenTree plugin: Logged in InvenTree
+2025-09-30 17:29:13,930 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064005937EF88EF445001095EB0010', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:63340', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759242553849, 'qos': 2, 'timestamp': 1759242553850, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-09-30 17:29:13,930 - INFO - Data from topic: sale/ready
+2025-09-30 17:29:13,930 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-09-30 17:29:13,930 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-09-30 17:29:13,948 - INFO - InvenTree plugin: Logged in InvenTree

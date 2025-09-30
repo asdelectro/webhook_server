@@ -1,0 +1,150 @@
+[
+  {
+    "id": "manufacturing-scan",
+    "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+    "command-working-directory": "/home/asd/webhook_server/scripts",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "manufacturing.py"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ],
+    "response-message": "Manufacturing scan processed",
+    "include-command-output-in-response": true,
+    "include-command-output-in-response-on-error": true,
+    "pass-environment-to-command": [
+      {
+        "source": "string",
+        "envname": "PYTHONPATH",
+        "name": "/home/asd/radiacode-webhook"
+      }
+    ],
+    "trigger-rule": {
+      "match": {
+        "type": "value",
+        "value": "production/ready",
+        "parameter": {
+          "source": "payload",
+          "name": "topic"
+        }
+      }
+    }
+  },
+  {
+    "id": "health-check",
+    "execute-command": "/bin/echo",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "{\"status\": \"OK\", \"service\": \"Radiacode Webhook Manufacturing\", \"version\": \"1.0.0\"}"
+      }
+    ],
+    "response-message": "Health check OK",
+    "include-command-output-in-response": true
+  },
+  {
+  "id": "get-devices",
+  "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+  "command-working-directory": "/home/asd/webhook_server/scripts",
+  "pass-arguments-to-command": [
+    {
+      "source": "string",
+      "name": "get_devices.py"
+    },
+    {
+      "source": "entire-payload"
+    }
+  ],
+  "response-message": "Recent devices retrieved",
+  "include-command-output-in-response": true,
+  "include-command-output-in-response-on-error": true,
+  "pass-environment-to-command": [
+    {
+      "source": "string",
+      "envname": "PYTHONPATH",
+      "name": "/home/asd/radiacode-webhook"
+    }
+  ],
+  "trigger-rule": {
+    "match": {
+      "type": "value",
+      "value": "/api/devices",
+      "parameter": {
+        "source": "payload",
+        "name": "path"
+      }
+    }
+  }
+},
+{
+  "id": "get-device-by-serial",
+  "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+  "command-working-directory": "/home/asd/webhook_server/scripts",
+  "pass-arguments-to-command": [
+    {
+      "source": "string",
+      "name": "get_device_by_serial.py"
+    },
+    {
+      "source": "entire-payload"
+    }
+  ],
+  "response-message": "Device data retrieved",
+  "include-command-output-in-response": true,
+  "include-command-output-in-response-on-error": true,
+  "pass-environment-to-command": [
+    {
+      "source": "string",
+      "envname": "PYTHONPATH",
+      "name": "/home/asd/radiacode-webhook"
+    }
+  ],
+  "trigger-rule": {
+    "match": {
+      "type": "regex",
+      "regex": "^/api/devices/.*$",
+      "parameter": {
+        "source": "payload",
+        "name": "path"
+      }
+    }
+  }
+},
+{
+    "id": "sale-scan",
+    "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+    "command-working-directory": "/home/asd/webhook_server/scripts",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "sale.py"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ],
+    "response-message": "Sale scan processed",
+    "include-command-output-in-response": true,
+    "include-command-output-in-response-on-error": true,
+    "pass-environment-to-command": [
+      {
+        "source": "string",
+        "envname": "PYTHONPATH",
+        "name": "/home/asd/radiacode-webhook"
+      }
+    ],
+    "trigger-rule": {
+      "match": {
+        "type": "value",
+        "value": "sale/ready",
+        "parameter": {
+          "source": "payload",
+          "name": "topic"
+        }
+      }
+    }
+  }
+]
