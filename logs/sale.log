@@ -276,3 +276,138 @@
 2025-09-30 17:29:13,930 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
 2025-09-30 17:29:13,930 - INFO - Validation OK: type=RC, serial=RC-102-011242
 2025-09-30 17:29:13,948 - INFO - InvenTree plugin: Logged in InvenTree
+2025-10-03 14:02:43,864 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F0A837E06F44500096AB80002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:61989', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759489363770, 'qos': 2, 'timestamp': 1759489363770, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:02:43,864 - INFO - Data from topic: sale/ready
+2025-10-03 14:02:43,864 - INFO - Parsing: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-10-03 14:02:43,864 - INFO - Validation OK: type=Shopify, serial=884179351180
+2025-10-03 14:02:43,873 - INFO - ✅ Written to DB: serial=884179351180, type=Shopify
+2025-10-03 14:02:47,548 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F0ABBCBEDF44500096AB80003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:61989', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759489367460, 'qos': 2, 'timestamp': 1759489367460, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:02:47,548 - INFO - Data from topic: sale/ready
+2025-10-03 14:02:47,548 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-03 14:02:47,549 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-03 14:02:47,559 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon
+2025-10-03 14:02:52,334 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F0B04D8D4F44500096AB80004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-102-011242"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:61989', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759489372248, 'qos': 2, 'timestamp': 1759489372248, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:02:52,334 - INFO - Data from topic: sale/ready
+2025-10-03 14:02:52,334 - INFO - Parsing: barcode=RC-102-011242, topic=sale/ready
+2025-10-03 14:02:52,334 - INFO - Validation OK: type=RC, serial=RC-102-011242
+2025-10-03 14:02:52,343 - INFO - ✅ Written to DB: serial=RC-102-011242, type=RC
+2025-10-03 14:02:53,417 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F0B154DEAF44500096AB80005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:61989', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759489373326, 'qos': 2, 'timestamp': 1759489373326, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:02:53,417 - INFO - Data from topic: sale/ready
+2025-10-03 14:02:53,417 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-10-03 14:02:53,417 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-10-03 14:02:53,426 - INFO - ✅ Written to DB: serial=RC-103-014352, type=RC
+2025-10-03 14:41:13,772 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F9431F4EDF445000986970002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:52087', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491673683, 'qos': 2, 'timestamp': 1759491673683, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:41:13,772 - INFO - Data from topic: sale/ready
+2025-10-03 14:41:13,773 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-03 14:41:13,773 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-03 14:41:13,783 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon
+2025-10-03 14:41:20,186 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F9493E3A9F445000986970003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"1222285681220007864500884179351180"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:52087', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491680101, 'qos': 2, 'timestamp': 1759491680101, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:41:20,186 - INFO - Data from topic: sale/ready
+2025-10-03 14:41:20,186 - INFO - Parsing: barcode=1222285681220007864500884179351180, topic=sale/ready
+2025-10-03 14:41:20,186 - INFO - Validation OK: type=Shopify, serial=884179351180
+2025-10-03 14:41:20,195 - INFO - ✅ Written to DB: serial=884179351180, type=Shopify
+2025-10-03 14:41:23,299 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F94C357E9F445000986970004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:52087', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491683211, 'qos': 2, 'timestamp': 1759491683211, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:41:23,299 - INFO - Data from topic: sale/ready
+2025-10-03 14:41:23,299 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-10-03 14:41:23,299 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-10-03 14:41:23,307 - INFO - ✅ Written to DB: serial=FBA18Z5238Q2, type=Amazon
+2025-10-03 14:41:26,461 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F94F3ACCEF445000986970005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:52087', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491686378, 'qos': 2, 'timestamp': 1759491686378, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 14:41:26,461 - INFO - Data from topic: sale/ready
+2025-10-03 14:41:26,461 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-10-03 14:41:26,461 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-10-03 14:41:26,469 - INFO - ✅ Written to DB: serial=RC-103-014352, type=RC
+2025-10-03 15:26:37,779 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064040368F1BA6F4450009A7A70002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:51199', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759494397696, 'qos': 2, 'timestamp': 1759494397697, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 15:26:37,779 - INFO - Data from topic: sale/ready
+2025-10-03 15:26:37,779 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-03 15:26:37,779 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-03 15:26:37,787 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon
+2025-10-03 15:26:39,051 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006404036A265C0F4450009A7A70003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:51199', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759494398961, 'qos': 2, 'timestamp': 1759494398961, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 15:26:39,051 - INFO - Data from topic: sale/ready
+2025-10-03 15:26:39,051 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-10-03 15:26:39,051 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-10-03 15:26:39,059 - INFO - ✅ Written to DB: serial=FBA18Z5238Q2, type=Amazon
+2025-10-03 15:26:40,708 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006404036BBC0B1F4450009A7A70004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"RC-103-014352"}', 'peerhost': '192.168.88.117', 'peername': '192.168.88.117:51199', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759494400622, 'qos': 2, 'timestamp': 1759494400622, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-03 15:26:40,708 - INFO - Data from topic: sale/ready
+2025-10-03 15:26:40,708 - INFO - Parsing: barcode=RC-103-014352, topic=sale/ready
+2025-10-03 15:26:40,708 - INFO - Validation OK: type=RC, serial=RC-103-014352
+2025-10-03 15:26:40,717 - INFO - ✅ Written to DB: serial=RC-103-014352, type=RC
+2025-10-06 09:14:50,738 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640775E7AB7EBF4450014C4F40002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759731290650, 'qos': 2, 'timestamp': 1759731290650, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:14:50,738 - INFO - Data from topic: sale/ready
+2025-10-06 09:14:50,738 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:14:50,738 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:14:50,738 - ERROR - General error: write_to_db() takes 2 positional arguments but 3 were given
+2025-10-06 09:14:52,915 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640775E9C021AF4450014C4F40003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759731292832, 'qos': 2, 'timestamp': 1759731292832, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:14:52,915 - INFO - Data from topic: sale/ready
+2025-10-06 09:14:52,915 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-10-06 09:14:52,915 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-10-06 09:14:52,915 - ERROR - General error: write_to_db() takes 2 positional arguments but 3 were given
+2025-10-06 09:18:13,844 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640776A95E5ABF4450014C4F40004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759731493758, 'qos': 2, 'timestamp': 1759731493758, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:18:13,844 - INFO - Data from topic: sale/ready
+2025-10-06 09:18:13,844 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:18:13,844 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:18:13,853 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:27:10,599 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640778A94209DF4450014C4F40005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759732030513, 'qos': 2, 'timestamp': 1759732030513, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:27:10,599 - INFO - Data from topic: sale/ready
+2025-10-06 09:27:10,599 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:27:10,599 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:27:10,607 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:27:29,102 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640778BAE788EF4450014C4F40006', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759732049016, 'qos': 2, 'timestamp': 1759732049017, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:27:29,102 - INFO - Data from topic: sale/ready
+2025-10-06 09:27:29,102 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:27:29,102 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:27:29,112 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:38:56,822 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064077B4AC5DBAF4450014C4F40007', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759732736744, 'qos': 2, 'timestamp': 1759732736744, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:38:56,822 - INFO - Data from topic: sale/ready
+2025-10-06 09:38:56,822 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:38:56,822 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:38:56,832 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:42:46,600 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064077C25E5EA0F4450014C4F40008', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759732966514, 'qos': 2, 'timestamp': 1759732966514, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:42:46,600 - INFO - Data from topic: sale/ready
+2025-10-06 09:42:46,600 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:42:46,600 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:42:46,609 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:43:04,780 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064077C373DAC8F4450014C4F40009', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759732984699, 'qos': 2, 'timestamp': 1759732984699, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:43:04,781 - INFO - Data from topic: sale/ready
+2025-10-06 09:43:04,781 - INFO - Parsing: barcode=FBA18Z5238Q2U000001, topic=sale/ready
+2025-10-06 09:43:04,781 - INFO - Validation OK: type=Amazon, serial=FBA18Z5238Q2
+2025-10-06 09:43:04,789 - INFO - ✅ Written to DB: serial=FBA18Z5238Q2, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:55:55,339 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064077F16190EEF4450014C4F4000A', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759733755252, 'qos': 2, 'timestamp': 1759733755253, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:55:55,339 - INFO - Data from topic: sale/ready
+2025-10-06 09:55:55,339 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:55:55,339 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:55:55,348 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 09:58:08,528 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064077F951F65CF4450014C4F4000B', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:49778', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759733888448, 'qos': 2, 'timestamp': 1759733888448, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 09:58:08,528 - INFO - Data from topic: sale/ready
+2025-10-06 09:58:08,528 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 09:58:08,528 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 09:58:08,537 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:17:06,549 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640783D26B468F4450014F1DC0002', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735026463, 'qos': 2, 'timestamp': 1759735026463, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:17:06,549 - INFO - Data from topic: sale/ready
+2025-10-06 10:17:06,549 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:17:06,549 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:17:06,556 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:17:21,121 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640783E0527BCF4450014F1DC0003', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735041042, 'qos': 2, 'timestamp': 1759735041042, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:17:21,121 - INFO - Data from topic: sale/ready
+2025-10-06 10:17:21,121 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:17:21,121 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:17:21,129 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:17:28,038 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640783E6EB616F4450014F1DC0004', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735047960, 'qos': 2, 'timestamp': 1759735047960, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:17:28,038 - INFO - Data from topic: sale/ready
+2025-10-06 10:17:28,039 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:17:28,039 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:17:28,046 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:17:44,209 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640783F655EECF4450014F1DC0005', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735064125, 'qos': 2, 'timestamp': 1759735064125, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:17:44,209 - INFO - Data from topic: sale/ready
+2025-10-06 10:17:44,209 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:17:44,209 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:17:44,220 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:18:04,872 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006407840A0BE7BF4450014F1DC0006', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735084793, 'qos': 2, 'timestamp': 1759735084793, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:18:04,872 - INFO - Data from topic: sale/ready
+2025-10-06 10:18:04,872 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:18:04,872 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:18:04,882 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013
+2025-10-06 10:21:57,233 - INFO - Received data: {'client_attrs': {}, 'clientid': 'D0D7F013', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640784E7A3F4FF4450014F1DC0007', 'metadata': {'rule_id': 'sale_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"D0D7F013","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.178', 'peername': '192.168.88.178:61880', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759735317151, 'qos': 2, 'timestamp': 1759735317151, 'topic': 'sale/ready', 'username': 'emqx_user'}
+2025-10-06 10:21:57,233 - INFO - Data from topic: sale/ready
+2025-10-06 10:21:57,233 - INFO - Parsing: barcode=FBA15KVQ8S63U000001, topic=sale/ready
+2025-10-06 10:21:57,234 - INFO - Validation OK: type=Amazon, serial=FBA15KVQ8S63
+2025-10-06 10:21:57,243 - INFO - ✅ Written to DB: serial=FBA15KVQ8S63, type=Amazon, scanner_id=D0D7F013

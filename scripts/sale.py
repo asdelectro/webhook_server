@@ -9,6 +9,7 @@ import requests
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Callable
+import psycopg2
 
 # Add path to AzureConnector
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -21,7 +22,15 @@ ALLOWED_TOPICS = ['sale/ready']
 
 # InvenTree configuration
 INVENTREE_URL = "http://192.168.88.132:8080"
-INVENTREE_TOKEN = "inv-7da8fcf64559e1b037158a386b63bf9f0ca58ffe-20250930"  # Get from InvenTree Settings -> API Tokens
+INVENTREE_TOKEN = "inv-7da8fcf64559e1b037158a386b63bf9f0ca58ffe-20250930"  
+
+DB_CONFIG = {
+    'host': 'localhost',  #
+    'database': 'scan_tmp_db',
+    'user': 'scaner',
+    'password': 'zxtbd',
+    'port': 5432
+}
 
 
 class BarcodeValidator:
@@ -80,6 +89,30 @@ class BarcodeValidator:
 validator = BarcodeValidator()
 
 
+
+def write_to_db(serial: str, barcode_type: str, scanner_id: str) -> bool:
+    """Write scan to database queue"""
+    try:
+        conn = psycopg2.connect(**DB_CONFIG)
+        cur = conn.cursor()
+        
+        cur.execute(
+            "INSERT INTO scan_queue (serial, barcode_type, scanner_id) VALUES (%s, %s, %s)",
+            (serial, barcode_type, scanner_id)
+        )
+        
+        conn.commit()
+        cur.close()
+        conn.close()
+        
+        logger.info(f"✅ Written to DB: serial={serial}, type={barcode_type}, scanner_id={scanner_id}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"❌ DB write error: {e}")
+        return False
+
+
 def send_to_inventree_plugin(serial: str, barcode_type: str) -> dict:
     """Send RC serial to InvenTree - only for logging, does NOT move"""
     try:
@@ -130,6 +163,7 @@ def process_sale(data):
         payload_json = json.loads(payload_str)
 
         barcode = payload_json.get('msg', '').strip()
+        scanner_id = payload_json.get('id', 'unknown')
         
         logger.info(f"Parsing: barcode={barcode}, topic={topic}")
 
@@ -144,18 +178,19 @@ def process_sale(data):
         barcode_type = result['type']
         
         logger.info(f"Validation OK: type={barcode_type}, serial={serial}")
+
+        db_success = write_to_db(serial, barcode_type, scanner_id)
         
-        # Send RC serials to InvenTree plugin
-        if barcode_type == 'RC':
-            inventree_result = send_to_inventree_plugin(serial, barcode_type)
-            logger.info(f"InvenTree plugin: {inventree_result['message']}")
+      
         
         response_data = {
             'status': 'success',
             'barcode': barcode,
             'serial': serial,
             'type': barcode_type,
+            'scanner_id': scanner_id,
             'topic': topic,
+            'db_written': db_success,
             'message': 'Barcode validated successfully'
         }
         print(json.dumps(response_data))

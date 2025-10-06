@@ -147,3 +147,39 @@
 2025-09-30 13:20:39,239 - INFO - Данные получены из топика: production/ready
 2025-09-30 13:20:39,239 - INFO - Парсинг: barcode=RC-103-014352, topic=production/ready
 2025-09-30 13:20:40,758 - INFO - Успешно записана manufacturing дата для: RC-103-014352 из топика: production/ready
+2025-10-02 11:39:20,822 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064028EBE47938F4450004F5C90002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-102-011242"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:54799', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759394360752, 'qos': 2, 'timestamp': 1759394360752, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-02 11:39:20,822 - INFO - Данные получены из топика: production/ready
+2025-10-02 11:39:20,822 - INFO - Парсинг: barcode=RC-102-011242, topic=production/ready
+2025-10-02 11:39:22,334 - INFO - Успешно записана manufacturing дата для: RC-102-011242 из топика: production/ready
+2025-10-03 14:40:35,579 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F91EB749DF445000986040002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491635508, 'qos': 2, 'timestamp': 1759491635508, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:35,579 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:35,579 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=production/ready
+2025-10-03 14:40:35,579 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:38,409 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F92168E53F445000986040003', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491638333, 'qos': 2, 'timestamp': 1759491638333, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:38,409 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:38,410 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=production/ready
+2025-10-03 14:40:38,410 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:46,040 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F928B1584F445000986040004', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491645969, 'qos': 2, 'timestamp': 1759491645969, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:46,040 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:46,040 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=production/ready
+2025-10-03 14:40:46,040 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:48,031 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F92A97807F445000986040005', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-014352"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491647961, 'qos': 2, 'timestamp': 1759491647961, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:48,031 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:48,031 - INFO - Парсинг: barcode=RC-103-014352, topic=production/ready
+2025-10-03 14:40:49,726 - INFO - Успешно записана manufacturing дата для: RC-103-014352 из топика: production/ready
+2025-10-03 15:36:34,903 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405A26B800F4450009AE6B0002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-009322"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759494994835, 'qos': 2, 'timestamp': 1759494994835, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:36:34,903 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:36:34,904 - INFO - Парсинг: barcode=RC-103-009322, topic=production/ready
+2025-10-03 15:36:36,371 - INFO - Успешно записана manufacturing дата для: RC-103-009322 из топика: production/ready
+2025-10-03 15:36:51,916 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405B2A763FF4450009AE6B0003', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-011106"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495011857, 'qos': 2, 'timestamp': 1759495011858, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:36:51,916 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:36:51,916 - INFO - Парсинг: barcode=RC-103-011106, topic=production/ready
+2025-10-03 15:36:53,390 - INFO - Успешно записана manufacturing дата для: RC-103-011106 из топика: production/ready
+2025-10-03 15:37:09,910 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405C3D0878F4450009AE6B0004', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-009322"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495029852, 'qos': 2, 'timestamp': 1759495029852, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:37:09,911 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:37:09,911 - INFO - Парсинг: barcode=RC-103-009322, topic=production/ready
+2025-10-03 15:37:11,460 - INFO - Успешно записана manufacturing дата для: RC-103-009322 из топика: production/ready
+2025-10-03 15:39:02,357 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006404062F0AB05F4450009AE6B0005', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-010031"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495142288, 'qos': 2, 'timestamp': 1759495142288, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:39:02,357 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:39:02,357 - INFO - Парсинг: barcode=RC-103-010031, topic=production/ready
+2025-10-03 15:39:03,882 - INFO - Успешно записана manufacturing дата для: RC-103-010031 из топика: production/ready

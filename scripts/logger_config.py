@@ -71,6 +71,10 @@ def get_check_device_logger():
     """Логгер для check_device.py"""
     return setup_logger('check_device')
 
+def get_scan_sender_logger():
+    """Логгер для read_and_send_scans.py"""
+    return setup_logger('get_pending_scans')
+
 
 # Пример использования:
 if __name__ == '__main__':

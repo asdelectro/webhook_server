@@ -114,6 +114,40 @@
   }
 },
 {
+  "id": "get-pending-scans",
+  "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+  "command-working-directory": "/home/asd/webhook_server/scripts",
+  "pass-arguments-to-command": [
+    {
+      "source": "string",
+      "name": "get_pending_scans.py"
+    },
+    {
+      "source": "entire-payload"
+    }
+  ],
+  "response-message": "Pending scans retrieved",
+  "include-command-output-in-response": true,
+  "include-command-output-in-response-on-error": true,
+  "pass-environment-to-command": [
+    {
+      "source": "string",
+      "envname": "PYTHONPATH",
+      "name": "/home/asd/radiacode-webhook"
+    }
+  ],
+  "trigger-rule": {
+    "match": {
+      "type": "value",
+      "value": "/api/get-pending-scans",
+      "parameter": {
+        "source": "payload",
+        "name": "path"
+      }
+    }
+  }
+},
+{
     "id": "sale-scan",
     "execute-command": "/home/asd/webhook_server/.venv/bin/python",
     "command-working-directory": "/home/asd/webhook_server/scripts",

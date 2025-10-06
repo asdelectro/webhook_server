@@ -880,3 +880,519 @@
 2025-09-30 14:40:47,673 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
 2025-09-30 14:40:48,343 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
 2025-09-30 14:40:48,425 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 11:38:05,861 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:38:06,616 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:38:06,709 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 11:38:36,934 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:37,578 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:37,655 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:38,929 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:39,612 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:39,705 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:40,939 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:41,546 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:41,629 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:42,914 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:43,573 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:43,662 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:44,915 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:45,521 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:45,603 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:46,927 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:47,619 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:47,712 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:48,923 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:49,613 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:49,706 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:50,922 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:51,609 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:51,702 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:52,925 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:53,533 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:53,614 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:54,937 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:55,620 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:55,714 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:56,938 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:57,512 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:57,589 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:38:58,923 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:38:59,531 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:38:59,613 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:00,941 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:01,512 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:01,589 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:02,928 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:03,501 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:03,578 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:04,915 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:05,488 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:05,566 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:06,919 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:07,586 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:07,668 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:08,932 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:09,598 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:09,679 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:10,934 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:11,548 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:11,632 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:12,933 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:13,547 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:13,630 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:14,935 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:15,509 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:15,586 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:16,940 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:17,514 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:17,592 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:18,946 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:19,520 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:19,597 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:20,822 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '00064028EBE47938F4450004F5C90002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-102-011242"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:54799', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759394360752, 'qos': 2, 'timestamp': 1759394360752, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-02 11:39:20,822 - INFO - Данные получены из топика: production/ready
+2025-10-02 11:39:20,822 - INFO - Парсинг: barcode=RC-102-011242, topic=production/ready
+2025-10-02 11:39:20,932 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:21,438 - INFO - Device found: RC-102-011242
+2025-10-02 11:39:21,439 - INFO - Current ManufDate: 2025-09-30T09:58:58
+2025-10-02 11:39:21,439 - INFO - Current SaleDate: 2025-09-29T15:55:50
+2025-10-02 11:39:21,521 - INFO - Will set ManufDate to: 2025-10-02T08:39:21.521160
+2025-10-02 11:39:21,595 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:21,685 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:22,242 - INFO - Manufacturing date updated for RC-102-011242: 2025-10-02T08:39:21.521160
+2025-10-02 11:39:22,334 - INFO - Успешно записана manufacturing дата для: RC-102-011242 из топика: production/ready
+2025-10-02 11:39:22,920 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-02 11:39:23,604 - INFO - Found 1 devices manufactured in last 1 minutes (UTC)
+2025-10-02 11:39:23,697 - INFO - Найдено 1 устройств за последние 1 минут (UTC)
+2025-10-02 11:39:24,038 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:39:24,610 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:39:24,687 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 11:43:06,407 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:43:07,042 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:43:07,119 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 11:48:06,664 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:48:07,457 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:48:07,555 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 11:53:06,419 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:53:07,193 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:53:07,288 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 11:58:05,871 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 11:58:06,674 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 11:58:06,766 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 12:03:06,448 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:03:07,235 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:03:07,326 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 12:08:06,662 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:08:07,359 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:08:07,436 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-02 12:13:58,627 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:13:59,331 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:13:59,409 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:18:58,653 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:18:59,429 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:18:59,507 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:23:58,642 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:23:59,393 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:23:59,471 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:28:58,670 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:28:59,429 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:28:59,505 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:33:58,677 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:33:59,520 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:33:59,607 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:38:05,922 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:38:06,561 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:38:06,637 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:43:58,711 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:43:59,492 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:43:59,580 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:48:58,709 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:48:59,548 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:48:59,636 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:53:58,729 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:53:59,489 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:53:59,568 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 12:58:58,780 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 12:58:59,430 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 12:58:59,507 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:03:58,757 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:03:59,469 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:03:59,556 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:08:58,746 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:08:59,384 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:08:59,460 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:13:58,722 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:13:59,361 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:13:59,437 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:18:58,725 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:18:59,455 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:18:59,534 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:23:58,730 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:23:59,430 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:23:59,507 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:28:58,737 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:28:59,412 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:28:59,494 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:33:58,777 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:33:59,493 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:33:59,575 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:38:58,784 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:38:59,564 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:38:59,653 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:43:58,764 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:43:59,607 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:43:59,705 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:48:58,777 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:48:59,429 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:48:59,507 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:53:58,805 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:53:59,456 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:53:59,533 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 13:58:58,802 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 13:58:59,549 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 13:58:59,638 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:03:58,786 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:03:59,530 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:03:59,621 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:08:58,805 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:08:59,555 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:08:59,637 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:13:06,799 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:13:07,428 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:13:07,505 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:18:58,796 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:18:59,437 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:18:59,514 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:23:58,820 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:23:59,455 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:23:59,531 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:28:58,830 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:28:59,488 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:28:59,565 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:33:58,847 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:33:59,703 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:33:59,796 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:38:58,827 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:38:59,701 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:38:59,792 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:43:58,832 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:43:59,598 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:43:59,676 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:48:58,854 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:48:59,645 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:48:59,727 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:53:58,916 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:53:59,766 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:53:59,856 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 14:58:58,885 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 14:58:59,612 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 14:58:59,702 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:03:58,920 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:03:59,709 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:03:59,792 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:08:58,930 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:08:59,585 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:08:59,664 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:13:58,923 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:13:59,631 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:13:59,719 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:18:25,555 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:18:26,301 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:18:26,393 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:23:58,938 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:23:59,581 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:23:59,659 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:28:59,015 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:28:59,671 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:28:59,750 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:33:58,947 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:33:59,727 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:33:59,816 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:38:58,940 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:38:59,590 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:38:59,669 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:43:58,939 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:43:59,585 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:43:59,662 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:48:58,986 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:48:59,733 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:48:59,810 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:53:58,973 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:53:59,612 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:53:59,688 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 15:58:58,978 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 15:58:59,681 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 15:58:59,768 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:03:58,996 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:03:59,750 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:03:59,842 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:08:58,990 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:08:59,706 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:08:59,794 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:13:58,996 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:13:59,646 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:13:59,723 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:18:59,004 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:18:59,675 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:18:59,757 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:23:58,998 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:23:59,719 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:23:59,807 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:28:59,027 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:28:59,695 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:28:59,776 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:33:59,047 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:33:59,797 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:33:59,891 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:38:59,072 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:38:59,741 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:38:59,823 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:43:59,052 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:43:59,705 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:43:59,782 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:48:59,028 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:48:59,723 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:48:59,800 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:53:59,064 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:53:59,742 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:53:59,825 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 16:58:59,068 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 16:58:59,812 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 16:58:59,904 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:03:59,078 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:03:59,798 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:03:59,885 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:08:59,073 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:08:59,745 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:08:59,827 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:13:59,095 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:13:59,745 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:13:59,823 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:18:59,071 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:18:59,858 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:18:59,955 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:23:59,080 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:23:59,814 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:23:59,904 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:28:59,108 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:28:59,841 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:28:59,922 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:33:13,842 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:33:14,576 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:33:14,666 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-02 17:38:59,164 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-02 17:38:59,870 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-02 17:38:59,956 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 14:40:35,579 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F91EB749DF445000986040002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491635508, 'qos': 2, 'timestamp': 1759491635508, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:35,579 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:35,579 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=production/ready
+2025-10-03 14:40:35,579 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:38,409 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F92168E53F445000986040003', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA18Z5238Q2U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491638333, 'qos': 2, 'timestamp': 1759491638333, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:38,409 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:38,410 - INFO - Парсинг: barcode=FBA18Z5238Q2U000001, topic=production/ready
+2025-10-03 14:40:38,410 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:46,040 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F928B1584F445000986040004', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"FBA15KVQ8S63U000001"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491645969, 'qos': 2, 'timestamp': 1759491645969, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:46,040 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:46,040 - INFO - Парсинг: barcode=FBA15KVQ8S63U000001, topic=production/ready
+2025-10-03 14:40:46,040 - WARNING - Invalid barcode format. Expected format: RC-XXXXXXXXX (min 10 chars)
+2025-10-03 14:40:48,031 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006403F92A97807F445000986040005', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-014352"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:52385', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759491647961, 'qos': 2, 'timestamp': 1759491647961, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 14:40:48,031 - INFO - Данные получены из топика: production/ready
+2025-10-03 14:40:48,031 - INFO - Парсинг: barcode=RC-103-014352, topic=production/ready
+2025-10-03 14:40:48,833 - INFO - Device found: RC-103-014352
+2025-10-03 14:40:48,833 - INFO - Current ManufDate: 2025-09-30T10:20:40
+2025-10-03 14:40:48,833 - INFO - Current SaleDate: 2025-09-30T10:41:27
+2025-10-03 14:40:48,924 - INFO - Will set ManufDate to: 2025-10-03T11:40:48.924787
+2025-10-03 14:40:49,635 - INFO - Manufacturing date updated for RC-103-014352: 2025-10-03T11:40:48.924787
+2025-10-03 14:40:49,726 - INFO - Успешно записана manufacturing дата для: RC-103-014352 из топика: production/ready
+2025-10-03 15:35:41,081 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:35:41,778 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:35:41,854 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 15:36:03,220 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:03,789 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:03,865 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:04,771 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:05,449 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:05,541 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:06,764 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:07,359 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:07,436 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:08,767 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:09,411 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:09,499 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:10,756 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:11,399 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:11,486 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:12,773 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:13,454 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:13,536 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:16,223 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:16,868 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:16,954 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:17,090 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:17,771 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:17,864 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:18,987 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:19,628 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:19,715 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:27,325 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:27,935 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:28,017 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:28,131 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:28,748 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:28,831 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:28,945 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:29,555 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:29,637 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:29,768 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:30,403 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:30,490 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:30,623 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:31,197 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:31,274 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:31,659 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:32,276 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:32,359 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:33,637 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:34,204 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:34,281 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:34,903 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405A26B800F4450009AE6B0002', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-009322"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759494994835, 'qos': 2, 'timestamp': 1759494994835, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:36:34,903 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:36:34,904 - INFO - Парсинг: barcode=RC-103-009322, topic=production/ready
+2025-10-03 15:36:35,589 - INFO - Device found: RC-103-009322
+2025-10-03 15:36:35,589 - INFO - Current ManufDate: Not set
+2025-10-03 15:36:35,589 - INFO - Current SaleDate: Not set
+2025-10-03 15:36:35,661 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:35,681 - INFO - Will set ManufDate to: 2025-10-03T12:36:35.681024
+2025-10-03 15:36:36,294 - INFO - Manufacturing date updated for RC-103-009322: 2025-10-03T12:36:35.681024
+2025-10-03 15:36:36,344 - INFO - Found 1 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:36,371 - INFO - Успешно записана manufacturing дата для: RC-103-009322 из топика: production/ready
+2025-10-03 15:36:36,437 - INFO - Найдено 1 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:36,830 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:36:37,407 - INFO - Found 1 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:36:37,484 - INFO - Найдено 1 устройств за последние 30 минут (UTC)
+2025-10-03 15:36:51,737 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:51,916 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405B2A763FF4450009AE6B0003', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-011106"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495011857, 'qos': 2, 'timestamp': 1759495011858, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:36:51,916 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:36:51,916 - INFO - Парсинг: barcode=RC-103-011106, topic=production/ready
+2025-10-03 15:36:52,378 - INFO - Found 1 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:52,454 - INFO - Найдено 1 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:52,500 - INFO - Device found: RC-103-011106
+2025-10-03 15:36:52,501 - INFO - Current ManufDate: Not set
+2025-10-03 15:36:52,501 - INFO - Current SaleDate: Not set
+2025-10-03 15:36:52,578 - INFO - Will set ManufDate to: 2025-10-03T12:36:52.578675
+2025-10-03 15:36:53,297 - INFO - Manufacturing date updated for RC-103-011106: 2025-10-03T12:36:52.578675
+2025-10-03 15:36:53,390 - INFO - Успешно записана manufacturing дата для: RC-103-011106 из топика: production/ready
+2025-10-03 15:36:53,680 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:36:54,250 - INFO - Found 2 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:36:54,327 - INFO - Найдено 2 устройств за последние 1 минут (UTC)
+2025-10-03 15:36:54,711 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:36:55,322 - INFO - Found 2 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:36:55,405 - INFO - Найдено 2 устройств за последние 30 минут (UTC)
+2025-10-03 15:37:09,738 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:37:09,910 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '000640405C3D0878F4450009AE6B0004', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-009322"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495029852, 'qos': 2, 'timestamp': 1759495029852, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:37:09,911 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:37:09,911 - INFO - Парсинг: barcode=RC-103-009322, topic=production/ready
+2025-10-03 15:37:10,310 - INFO - Found 2 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:37:10,388 - INFO - Найдено 2 устройств за последние 1 минут (UTC)
+2025-10-03 15:37:10,594 - INFO - Device found: RC-103-009322
+2025-10-03 15:37:10,595 - INFO - Current ManufDate: 2025-10-03T12:36:36
+2025-10-03 15:37:10,595 - INFO - Current SaleDate: Not set
+2025-10-03 15:37:10,687 - INFO - Will set ManufDate to: 2025-10-03T12:37:10.687425
+2025-10-03 15:37:10,794 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:37:11,372 - INFO - Manufacturing date updated for RC-103-009322: 2025-10-03T12:37:10.687425
+2025-10-03 15:37:11,460 - INFO - Успешно записана manufacturing дата для: RC-103-009322 из топика: production/ready
+2025-10-03 15:37:11,473 - INFO - Found 2 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:37:11,565 - INFO - Найдено 2 устройств за последние 30 минут (UTC)
+2025-10-03 15:38:57,731 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:38:58,365 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:38:58,441 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:39:01,228 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:39:01,905 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:39:01,996 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:39:02,097 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:39:02,357 - INFO - Получены данные: {'client_attrs': {}, 'clientid': '55F8342B', 'event': 'message.publish', 'flags': {'dup': False, 'retain': False}, 'id': '0006404062F0AB05F4450009AE6B0005', 'metadata': {'rule_id': 'postgres_webhook_WH_D'}, 'node': 'emqx@127.0.0.1', 'payload': '{"id":"55F8342B","msg":"RC-103-010031"}', 'peerhost': '192.168.88.74', 'peername': '192.168.88.74:56617', 'pub_props': {'User-Property': {}}, 'publish_received_at': 1759495142288, 'qos': 2, 'timestamp': 1759495142288, 'topic': 'production/ready', 'username': 'undefined'}
+2025-10-03 15:39:02,357 - INFO - Данные получены из топика: production/ready
+2025-10-03 15:39:02,357 - INFO - Парсинг: barcode=RC-103-010031, topic=production/ready
+2025-10-03 15:39:02,774 - INFO - Found 0 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:39:02,867 - INFO - Найдено 0 устройств за последние 1 минут (UTC)
+2025-10-03 15:39:03,039 - INFO - Device found: RC-103-010031
+2025-10-03 15:39:03,039 - INFO - Current ManufDate: Not set
+2025-10-03 15:39:03,040 - INFO - Current SaleDate: Not set
+2025-10-03 15:39:03,131 - INFO - Will set ManufDate to: 2025-10-03T12:39:03.131394
+2025-10-03 15:39:03,673 - INFO - Получены данные: {'limit': 10, 'minutes': 1, 'path': '/api/devices'}
+2025-10-03 15:39:03,799 - INFO - Manufacturing date updated for RC-103-010031: 2025-10-03T12:39:03.131394
+2025-10-03 15:39:03,882 - INFO - Успешно записана manufacturing дата для: RC-103-010031 из топика: production/ready
+2025-10-03 15:39:04,316 - INFO - Found 1 devices manufactured in last 1 minutes (UTC)
+2025-10-03 15:39:04,404 - INFO - Найдено 1 устройств за последние 1 минут (UTC)
+2025-10-03 15:39:04,807 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:39:05,454 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:39:05,541 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 15:40:41,919 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:40:42,660 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:40:42,752 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 15:45:41,951 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:45:42,695 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:45:42,777 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 15:50:41,950 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:50:42,614 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:50:42,692 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 15:55:41,943 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 15:55:42,627 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 15:55:42,708 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 16:00:41,957 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:00:42,638 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:00:42,720 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 16:05:41,670 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:05:42,514 - INFO - Found 3 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:05:42,604 - INFO - Найдено 3 устройств за последние 30 минут (UTC)
+2025-10-03 16:10:55,985 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:10:56,767 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:10:56,849 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:15:55,971 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:15:56,656 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:15:56,738 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:20:55,988 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:20:56,625 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:20:56,702 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:25:56,011 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:25:56,705 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:25:56,791 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:30:56,010 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:30:56,644 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:30:56,720 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:35:56,022 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:35:56,782 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:35:56,877 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:40:56,200 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:40:56,953 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:40:57,030 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:45:56,037 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:45:56,842 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:45:56,924 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:50:56,047 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:50:56,693 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:50:56,769 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 16:55:42,016 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 16:55:42,679 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 16:55:42,756 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:00:56,047 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:00:56,683 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:00:56,760 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:05:56,047 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:05:56,715 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:05:56,796 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:10:56,069 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:10:56,716 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:10:56,795 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:15:56,095 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:15:56,745 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:15:56,824 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:20:56,084 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:20:56,732 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:20:56,810 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:25:56,080 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:25:56,834 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:25:56,910 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
+2025-10-03 17:30:56,087 - INFO - Получены данные: {'limit': 10, 'minutes': 30, 'path': '/api/devices'}
+2025-10-03 17:30:56,940 - INFO - Found 0 devices manufactured in last 30 minutes (UTC)
+2025-10-03 17:30:57,037 - INFO - Найдено 0 устройств за последние 30 минут (UTC)
