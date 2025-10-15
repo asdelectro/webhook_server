@@ -22,10 +22,10 @@ ALLOWED_TOPICS = ['sale/ready']
 
 # InvenTree configuration
 INVENTREE_URL = "http://192.168.88.132:8080"
-INVENTREE_TOKEN = "inv-7da8fcf64559e1b037158a386b63bf9f0ca58ffe-20250930"  
+INVENTREE_TOKEN = "inv-7da8fcf64559e1b037158a386b63bf9f0ca58ffe-20250930"
 
 DB_CONFIG = {
-    'host': 'localhost',  #
+    'host': 'localhost',
     'database': 'scan_tmp_db',
     'user': 'scaner',
     'password': 'zxtbd',
@@ -36,6 +36,13 @@ DB_CONFIG = {
 class BarcodeValidator:
     def __init__(self):
         self.rules = [
+            {
+                'name': 'Amazon',
+                'pattern': r'.+', # Любой код, главное чтобы длина была > 10
+                'extractor': lambda bc: bc,
+                'min_length': 10,
+                'max_length': 12 #
+            },
             {
                 'name': 'RC',
                 'pattern': r'^RC-\d{3}-\d{6}$',
@@ -58,33 +65,34 @@ class BarcodeValidator:
                 'max_length': 34
             }
         ]
-    
+
     def validate(self, barcode: str) -> dict:
         barcode = barcode.strip()
-        
+        barcode_len = len(barcode)
+
         for rule in self.rules:
-            if rule['min_length'] <= len(barcode) <= rule['max_length']:
-                if re.match(rule['pattern'], barcode):
-                    try:
-                        serial = rule['extractor'](barcode)
-                        return {
-                            'valid': True,
-                            'serial': serial,
-                            'type': rule['name'],
-                            'original': barcode,
-                            'error': None
-                        }
-                    except Exception as e:
-                        continue
-        
+            if rule['min_length'] <= barcode_len:
+                if rule['max_length'] is None or barcode_len <= rule['max_length']:
+                    if re.match(rule['pattern'], barcode):
+                        try:
+                            serial = rule['extractor'](barcode)
+                            return {
+                                'valid': True,
+                                'serial': serial,
+                                'type': rule['name'],
+                                'original': barcode,
+                                'error': None
+                            }
+                        except Exception as e:
+                            continue
+
         return {
             'valid': False,
             'serial': None,
             'type': 'Unknown',
             'original': barcode,
-            'error': f"No matching pattern for barcode length {len(barcode)}"
+            'error': f"No matching pattern for barcode length {barcode_len}"
         }
-
 
 validator = BarcodeValidator()
 
