@@ -6,6 +6,7 @@ import sys
 import json
 from datetime import datetime
 from pathlib import Path
+from aux.InvenTreeStockManager import InvenTreeStockManager
 
 # Добавляем путь к AzureConnector
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -20,6 +21,18 @@ logger = get_manufacturing_logger()
 BARCODE_PREFIX = 'RC-'
 MIN_BARCODE_LENGTH = 10
 ALLOWED_TOPICS = ['production/ready']
+
+def process_new_device(serial_number: str):
+    """
+    Adds a new device to InvenTree based on its serial number.
+    """
+    manager = InvenTreeStockManager()
+    success, message = manager.add_device_by_serial(serial_number)
+
+    if success:
+        logger.info(f"OK! Device {serial_number} success add in InvenTree: {message}")
+    else:
+        logger.info(f"ERROR {serial_number} not add in InvenTree: {message}")
 
 
 def validate_barcode(barcode):
@@ -80,7 +93,9 @@ def process_manufacturing(data):
             logger.warning(error_msg)
             print(json.dumps({'error': error_msg}))
             return 1
-        
+        #Add new device to InvenTree
+        process_new_device(barcode)
+
         # Записываем дату изготовления
         manager = RadiacodeManager()
         success = manager.WriteManufacturingDate(barcode)
