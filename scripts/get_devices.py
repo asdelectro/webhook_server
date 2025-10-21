@@ -26,8 +26,8 @@ def get_recent_devices(data):
         logger.info(f"Получены данные: {data}")
 
         # Извлекаем параметры с проверкой типов
-        limit = data.get('limit', 10)
-        minutes = data.get('minutes', 30)
+        limit = data.get('limit', 100)
+        minutes = data.get('minutes', 600)
 
         # Проверяем и преобразуем параметры в int
         try:

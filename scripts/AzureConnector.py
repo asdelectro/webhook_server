@@ -370,7 +370,7 @@ class RadiacodeManager:
                     age_minutes = int(time_diff.total_seconds() / 60)
                     age_seconds = int(time_diff.total_seconds())
                     
-                    status = "ready" if time_diff.total_seconds() <= 3600 else "expired"
+                    status = "ready" if time_diff.total_seconds() <= 36000 else "expired"
                     
                     device_info = {
                         'serial': serial,
