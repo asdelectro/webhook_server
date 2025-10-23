@@ -56,6 +56,10 @@ def get_sale_logger():
     """Логгер для sale.py"""
     return setup_logger('sale')
 
+def get_invent_logger():
+    """Логгер для invent.py"""
+    return setup_logger('invent')
+
 
 def get_device_logger():
     """Логгер для get_device_by_serial.py"""

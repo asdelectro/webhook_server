@@ -79,6 +79,40 @@
     }
   }
 },
+ {
+  "id": "invent",
+  "execute-command": "/home/asd/webhook_server/.venv/bin/python",
+  "command-working-directory": "/home/asd/webhook_server/scripts",
+  "pass-arguments-to-command": [
+    {
+      "source": "string",
+      "name": "invent.py"
+    },
+    {
+      "source": "entire-payload"
+    }
+  ],
+  "response-message": "Recent devices inventoried",
+  "include-command-output-in-response": true,
+  "include-command-output-in-response-on-error": true,
+  "pass-environment-to-command": [
+    {
+      "source": "string",
+      "envname": "PYTHONPATH",
+      "name": "/home/asd/radiacode-webhook"
+    }
+  ],
+  "trigger-rule": {
+    "match": {
+      "type": "value",
+      "value": "invent",
+      "parameter": {
+        "source": "payload",
+        "name": "topic"
+      }
+    }
+  }
+},
 {
   "id": "get-device-by-serial",
   "execute-command": "/home/asd/webhook_server/.venv/bin/python",
