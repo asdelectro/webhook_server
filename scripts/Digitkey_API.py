@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
-from typing import Optional, Dict
+import json
+from typing import Optional, Dict, List
 
 class DigiKeyClient:
     BASE_URL = "https://api.digikey.com"
@@ -39,57 +40,44 @@ class DigiKeyClient:
             return r.json().get("Product", {})
         return None
 
-    # ===== Подметоды для извлечения данных =====
+    # ===== Подметоды =====
     def get_manufacturer(self, data: Dict) -> Optional[str]:
-        """Производитель"""
         mfr = data.get("Manufacturer")
         if isinstance(mfr, dict):
             return mfr.get("Name")
-        return str(mfr) if mfr else None
+        return str(mfr) if mfr else None    
 
-    def get_nominal(self, data: Dict) -> Optional[str]:
-        """Номинал (емкость/сопротивление/индуктивность)"""
+    def get_description(self, data: Dict) -> Optional[str]:
+        description = data.get("Description", {})
+        return description.get("ProductDescription")
+
+    def get_size(self, data: Dict) -> Optional[str]:
         for p in data.get("Parameters", []):
             name = p["ParameterText"].lower()
-            if name in ["capacitance", "resistance", "inductance"]:
+            if any(key in name for key in ["package / case", "size / dimension", "case size", "package case"]):
                 return p["ValueText"]
         return None
 
-    def get_capacitance(self, data: Dict) -> Optional[str]:
-        for p in data.get("Parameters", []):
-            if p["ParameterText"].lower() == "capacitance":
-                return p["ValueText"]
-        return None
-
-    def get_power(self, data: Dict) -> Optional[str]:
-        for p in data.get("Parameters", []):
-            if "power" in p["ParameterText"].lower():
-                return p["ValueText"]
-        return None
-
-    def get_voltage(self, data: Dict) -> Optional[str]:
-        for p in data.get("Parameters", []):
-            if "voltage" in p["ParameterText"].lower():
-                return p["ValueText"]
-        return None
-
-    def get_quantity(self, data: Dict) -> Optional[int]:
-        return data.get("QuantityAvailable")
-
-    def get_basic_info(self, part_number: str) -> Optional[Dict]:
-        """Универсальный метод — возвращает все ключевые параметры"""
+    # ===== Основная функция =====
+    def get_json_info(self, part_number: str) -> Optional[Dict]:
+        """Возвращает данные в JSON-формате с ключами:
+        DigiKey, Description, Manufacturer, Size
+        
+        Args:
+            part_number: Номер компонента DigiKey
+            
+        Returns:
+            dict: Словарь с данными компонента или None если не найден
+        """
         data = self._get_product(part_number)
         if not data:
             return None
         return {
-            "manufacturer": self.get_manufacturer(data),
-            "nominal": self.get_nominal(data),
-            "capacitance": self.get_capacitance(data),
-            "power": self.get_power(data),
-            "voltage": self.get_voltage(data),
-            "quantity": self.get_quantity(data),
+            "DigiKey": part_number,
+            "Description": self.get_description(data),
+            "Manufacturer": self.get_manufacturer(data),
+            "Size": self.get_size(data),
         }
-
 
 
 if __name__ == "__main__":
@@ -98,15 +86,30 @@ if __name__ == "__main__":
         client_secret="lXRuQUfdZvRDCOpqfTAnOjNUkjfIAudCg1f0xkTxbLcypSaXPCbuiGlcK9os62oR",
     )
 
-    part_number = "1276-CL05A474KO5NNNCTR-ND"
-    info = api.get_basic_info(part_number)
+    # 🧩 Тестовые артикула с Digi-Key
+    test_parts = [
+        "RC0402FR-0710KL", "CRCW06031M00FKEA",
+        "GRM188R71C105KA12D", "C0603C104K5RAC7081",
+        "LQG18HN10NJ00D", "NRS4018T4R7MDGJ",
+        "LP2985A-33DBVR", "MP1584EN-LF-Z",
+        "BC547BTA", "IRLZ44NPBF",
+        "1N4007-T", "1N5819G",
+        "497-16569-ND", "ATMEGA328P-PU-ND",
+        "LTST-C190KRKT", "B3U-1000P",
+        "ABLS-16.000MHZ-B4-T", "609-3329-ND",
+    ]
 
-    if info:
-        print("Производитель:", info["manufacturer"])
-        print("Номинал:", info["nominal"])
-        print("Ёмкость:", info["capacitance"])
-        print("Мощность:", info["power"])
-        print("Напряжение:", info["voltage"])
-        print("В наличии:", info["quantity"])
-    else:
-        print("Ошибка: компонент не найден")
+    results: List[Dict] = []
+
+    for part_number in test_parts:
+        print(f"🔹 Проверяем: {part_number}")
+        info = api.get_json_info(part_number)
+        if info:
+            results.append(info)
+            print(f"  ✅ {info.get('Description', 'N/A')}")
+        else:
+            print("  ⚠️ Ошибка: компонент не найден")
+
+    # Выводим итоговый JSON красиво
+    print("\n=== JSON результат ===")
+    print(json.dumps(results, indent=4, ensure_ascii=False))
