@@ -26,7 +26,7 @@ def process_new_device(serial_number: str):
     """
     Adds a new device to InvenTree based on its serial number.
     """
-    manager = InvenTreeStockManager()
+    manager = InvenTreeStockManager(logger=logger)#logger=logger enabled logging in InvenTreeStockManager
     success, message = manager.add_device_by_serial(serial_number)
 
     if success:

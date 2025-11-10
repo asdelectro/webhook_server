@@ -7,6 +7,8 @@ import base64
 import logging
 from pathlib import Path
 from datetime import datetime, timezone
+import struct
+import json
 
 load_dotenv()
 
@@ -231,15 +233,70 @@ class RadiacodeManager:
                     cursor.close()
                     connection.close()
 
+    def _parse_calibration_data(self, calibration_hex):
+        """
+        Parse calibration data and extract Ti-61 and Cs-60 float32 values
+        
+        Args:
+            calibration_hex: hex string of calibration data
+            
+        Returns:
+            dict: {'Ti': float_value, 'Cs': float_value} or None if patterns not found
+        """
+        try:
+            if not calibration_hex:
+                logger.warning("Calibration data is empty")
+                return None
+                
+            result = {}
+            
+            # Ищем паттерн для Ti-61: 01006100
+            ti_pattern = '01006100'
+            ti_pos = calibration_hex.find(ti_pattern)
+            
+            if ti_pos != -1:
+                # Читаем следующие 4 байта (8 hex символов) после паттерна
+                ti_hex = calibration_hex[ti_pos + len(ti_pattern):ti_pos + len(ti_pattern) + 8]
+                # Конвертируем hex в bytes и затем в float32
+                ti_bytes = bytes.fromhex(ti_hex)
+                ti_value = struct.unpack('<f', ti_bytes)[0]  # '<f' = little-endian float
+                result['Ti'] = round(ti_value, 2)
+                logger.info(f"Found Ti-61: {ti_hex} = {ti_value}")
+            else:
+                logger.warning("Ti-61 pattern (01006100) not found")
+                result['Ti'] = None
+            
+            # Ищем паттерн для Cs-60: 01006000
+            cs_pattern = '01006000'
+            cs_pos = calibration_hex.find(cs_pattern)
+            
+            if cs_pos != -1:
+                # Читаем следующие 4 байта (8 hex символов) после паттерна
+                cs_hex = calibration_hex[cs_pos + len(cs_pattern):cs_pos + len(cs_pattern) + 8]
+                # Конвертируем hex в bytes и затем в float32
+                cs_bytes = bytes.fromhex(cs_hex)
+                cs_value = struct.unpack('<f', cs_bytes)[0]  # '<f' = little-endian float
+                result['Cs'] = round(cs_value, 2)
+                logger.info(f"Found Cs-60: {cs_hex} = {cs_value}")
+            else:
+                logger.warning("Cs-60 pattern (01006000) not found")
+                result['Cs'] = None
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"Error parsing calibration data: {e}")
+            return None
+
     def ReadManufacturingDateAll(self, serial):
         """
-        Read ALL fields for specified serial number
+        Read ALL fields for specified serial number and parse calibration data
 
         Args:
             serial: device serial number (str)
 
         Returns:
-            dict or None: all device fields if found, None if not found
+            dict or None: all device fields with parsed calibration, None if not found
         """
         try:
             connection = self._get_connection()
@@ -259,14 +316,21 @@ class RadiacodeManager:
                 
                 # Конвертируем все значения для JSON совместимости
                 formatted_result = {}
+                calibration_hex = None
+                
                 for key, value in result.items():
                     if isinstance(value, datetime):
                         formatted_result[key] = value.isoformat()
                         logger.debug(f"  {key}: {value.isoformat()}")
                     elif isinstance(value, bytes):
-                        # Конвертируем bytes в base64 строку
-                        formatted_result[key] = base64.b64encode(value).decode('utf-8')
-                        logger.debug(f"  {key}: <bytes data, length: {len(value)}>")
+                        # Сохраняем hex для CalibrationData
+                        if key == 'CalibrationData':
+                            calibration_hex = value.hex().upper()
+                            formatted_result[key] = calibration_hex
+                            logger.debug(f"  {key}: <bytes data, length: {len(value)}>")
+                        else:
+                            formatted_result[key] = base64.b64encode(value).decode('utf-8')
+                            logger.debug(f"  {key}: <bytes data, length: {len(value)}>")
                     elif value is None:
                         formatted_result[key] = None
                         logger.debug(f"  {key}: None")
@@ -274,6 +338,23 @@ class RadiacodeManager:
                         formatted_result[key] = value
                         logger.debug(f"  {key}: {value}")
                 
+                # Парсим калибровочные данные
+                        if calibration_hex:
+                            calibration_values = self._parse_calibration_data(calibration_hex)
+                            if calibration_values:
+                                ti_val = calibration_values.get('Ti', 0.0)
+                                cs_val = calibration_values.get('Cs', 0.0)
+                                
+                                # Безопасное форматирование с проверкой на None
+                                ti_str = f"{ti_val:.2f}" if ti_val is not None else "N/A"
+                                cs_str = f"{cs_val:.2f}" if cs_val is not None else "N/A"
+                                
+                                formatted_result['CalibrationParsed'] = f"Ti={ti_str}, Cs={cs_str}"
+                                formatted_result['Ti_value'] = ti_val
+                                formatted_result['Cs_value'] = cs_val
+                            else:
+                                formatted_result['CalibrationParsed'] = "Parse failed"
+                        
                 return formatted_result
             else:
                 logger.warning(f"Device with serial number {serial} not found")
@@ -403,13 +484,18 @@ if __name__ == "__main__":
     manager = RadiacodeManager()
 
     # Write manufacturing date
-    manager.WriteManufacturingDate("RC-103G-001665")
+   # manager.WriteManufacturingDate("RC-103G-001665")
 
     # Write sale date
-    manager.WriteSaleDate("RC-103G-001665")
+  #  manager.WriteSaleDate("RC-103G-001665")
 
     # Read manufacturing date
-    manager.ReadManufacturingDate("RC-103G-001665")
+   # manager.ReadManufacturingDate("RC-103G-001665")
 
     # Read sale date
-    manager.ReadSaleDate("RC-103G-001665")
+   # manager.ReadSaleDate("RC-103G-001665")
+
+   
+    result = manager.ReadManufacturingDateAll("RC-103-015148")
+    #result = manager.ReadManufacturingDateAll("RC-102-006783")
+    print(json.dumps(result, indent=2, ensure_ascii=False))
