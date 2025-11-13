@@ -120,62 +120,101 @@ def process_sale(data):
         payload = json.loads(safe_payload)
         msg = payload.get('msg', '')
 
-        # Разделяем header и остальную часть
-        if msg.startswith('[)>'):
-            header, rest = msg.split('\x1e', 1)
-        else:
-            header, rest = '', msg
-
-        records = parse_digikey_payload(rest)
-        data_record = records[0] if records else ''
-        part_number, quantity_str = extract_part_qty(data_record)
-
-        # Преобразуем количество в число
-        try:
-            quantity = int(quantity_str) if quantity_str != 'N/A' else 1
-        except ValueError:
-            quantity = 1
-            logger.warning(f"⚠️ Не удалось распознать количество '{quantity_str}', используем 1")
-
-        # Получаем данные через DigiKey API
-        if part_number != 'N/A':
-            logger.info(f"🔍 Запрос данных о компоненте {part_number} из DigiKey API...")
+        # Проверяем, это ли структурированный DigiKey баркод
+        if msg.startswith('[)>') or RS in msg or GS in msg:
+            # ===== ОБРАБОТКА DIGIKEY БАРКОДА =====
+            logger.info("🏷️ Обнаружен структурированный DigiKey баркод")
             
-            part_info = dk_client.get_json_info(part_number)
-            
-            if part_info:
-                manufacturer = part_info.get("Manufacturer", "N/A")
-                description = part_info.get("Description", "N/A")
-                size = part_info.get("Size", "N/A")
-                
-                # Логируем полученные данные
-                logger.info(
-                    f"📦 Digi-Key Header: {header} | "
-                    f"Part Number: {part_number} | "
-                    f"Quantity: {quantity} | "
-                    f"Manufacturer: {manufacturer} | "
-                    f"Description: {description} | "
-                    f"Size: {size}"
-                )
-                
-                # Отправляем в InvenTree
-                logger.info("=" * 60)
-                logger.info("🚀 Начинаем отправку в InvenTree...")
-                success = send_to_inventree(part_info, quantity)
-                logger.info("=" * 60)
-                
-                if success:
-                    logger.info("🎉 Компонент успешно добавлен в очередь InvenTree!")
-                    logger.info("💡 Откройте плагин в браузере и нажмите 'Обработать' для создания компонента")
-                else:
-                    logger.error("❌ Не удалось добавить компонент в InvenTree")
-                    
+            # Разделяем header и остальную часть
+            if msg.startswith('[)>'):
+                header, rest = msg.split('\x1e', 1)
             else:
-                logger.error(f"❌ Не удалось получить данные о компоненте {part_number} из DigiKey API")
-        else:
-            logger.warning("⚠️ Part number не найден в данных сканера")
+                header, rest = '', msg
 
-        return records
+            records = parse_digikey_payload(rest)
+            data_record = records[0] if records else ''
+            part_number, quantity_str = extract_part_qty(data_record)
+
+            # Преобразуем количество в число
+            try:
+                quantity = int(quantity_str) if quantity_str != 'N/A' else 1
+            except ValueError:
+                quantity = 1
+                logger.warning(f"⚠️ Не удалось распознать количество '{quantity_str}', используем 1")
+
+            # Получаем данные через DigiKey API
+            if part_number != 'N/A':
+                logger.info(f"🔍 Запрос данных о компоненте {part_number} из DigiKey API...")
+                
+                part_info = dk_client.get_json_info(part_number)
+                
+                if part_info:
+                    manufacturer = part_info.get("Manufacturer", "N/A")
+                    description = part_info.get("Description", "N/A")
+                    size = part_info.get("Size", "N/A")
+                    
+                    # Логируем полученные данные
+                    logger.info(
+                        f"📦 Digi-Key Header: {header} | "
+                        f"Part Number: {part_number} | "
+                        f"Quantity: {quantity} | "
+                        f"Manufacturer: {manufacturer} | "
+                        f"Description: {description} | "
+                        f"Size: {size}"
+                    )
+                    
+                    # Отправляем в InvenTree
+                    logger.info("=" * 60)
+                    logger.info("🚀 Начинаем отправку в InvenTree...")
+                    success = send_to_inventree(part_info, quantity)
+                    logger.info("=" * 60)
+                    
+                    if success:
+                        logger.info("🎉 Компонент успешно добавлен в очередь InvenTree!")
+                        logger.info("💡 Откройте плагин в браузере и нажмите 'Обработать' для создания компонента")
+                    else:
+                        logger.error("❌ Не удалось добавить компонент в InvenTree")
+                        
+                else:
+                    logger.error(f"❌ Не удалось получить данные о компоненте {part_number} из DigiKey API")
+            else:
+                logger.warning("⚠️ Part number не найден в данных DigiKey сканера")
+                
+            return []
+            
+        else:
+            # ===== ОБРАБОТКА ПРОСТОГО БАРКОДА =====
+            logger.info("📋 Обнаружен простой баркод (не DigiKey)")
+            
+            # Используем весь msg как part number
+            simple_barcode = msg.strip()
+            quantity = 1  # По умолчанию количество = 1
+            
+            logger.info(f"📦 Простой баркод: {simple_barcode} | Quantity: {quantity}")
+            
+            # Создаем простую структуру данных без DigiKey API
+            simple_part_info = {
+                "DigiKey": simple_barcode,
+                "Description": f"Компонент {simple_barcode}",
+                "Manufacturer": "Unknown",
+                "Size": "N/A"
+            }
+            
+            logger.info(f"📋 Создана структура для простого баркода: {simple_part_info}")
+            
+            # Отправляем в InvenTree
+            logger.info("=" * 60)
+            logger.info("🚀 Отправляем простой баркод в InvenTree...")
+            success = send_to_inventree(simple_part_info, quantity)
+            logger.info("=" * 60)
+            
+            if success:
+                logger.info(f"🎉 Простой баркод {simple_barcode} успешно добавлен в очередь InvenTree!")
+                logger.info("💡 Откройте плагин в браузере и нажмите 'Обработать' для создания компонента")
+            else:
+                logger.error(f"❌ Не удалось добавить простой баркод {simple_barcode} в InvenTree")
+                
+            return []
         
     except Exception as e:
         logger.error(f"Error parsing payload: {e}", exc_info=True)

@@ -6,7 +6,11 @@ import sys
 import json
 from datetime import datetime
 from pathlib import Path
-from aux.InvenTreeStockManager import InvenTreeStockManager
+# Импорт InvenTreeStockManager больше не нужен, но мы его оставим как заглушку,
+# если вы захотите его использовать для других целей в будущем.
+# from aux.InvenTreeStockManager import InvenTreeStockManager 
+import time
+import requests # <-- ДОБАВЛЕНО: для выполнения HTTP-запросов
 
 # Добавляем путь к AzureConnector
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -17,25 +21,53 @@ from logger_config import get_manufacturing_logger
 # Получаем настроенный логгер (без StreamHandler!)
 logger = get_manufacturing_logger()
 
-# Конфигурация
+# ---------------- КОНФИГУРАЦИЯ FLASK-ОЧЕРЕДИ ----------------
+# Укажите адрес и порт вашего Flask-сервера с очередью (например, на порту 5000)
+FLASK_QUEUE_URL = "http://192.168.88.132:5000/add_serial"
+# -------------------------------------------------------------
+
+# Конфигурация сканирования
 BARCODE_PREFIX = 'RC-'
 MIN_BARCODE_LENGTH = 10
 ALLOWED_TOPICS = ['production/ready']
 
+# --- ИЗМЕНЕНА: ОТПРАВКА СЕРИЙНОГО НОМЕРА В FLASK-ОЧЕРЕДЬ ---
 def process_new_device(serial_number: str):
     """
-    Adds a new device to InvenTree based on its serial number.
+    Отправляет новый серийный номер в очередь Flask-сервера.
     """
-    manager = InvenTreeStockManager(logger=logger)#logger=logger enabled logging in InvenTreeStockManager
-    success, message = manager.add_device_by_serial(serial_number)
+    try:
+        payload = {'serial': serial_number}
+        
+        logger.info(f"Sending {serial_number} to Flask queue: {FLASK_QUEUE_URL}")
+        
+        # Отправляем POST-запрос
+        response = requests.post(
+            FLASK_QUEUE_URL, 
+            json=payload, 
+            headers={'Content-Type': 'application/json'},
+            timeout=5 # Таймаут для ожидания ответа от Flask-сервера
+        )
+        
+        # Flask-сервер очереди должен вернуть 202 Accepted, если успешно
+        if response.status_code == 202:
+            logger.info(f"OK! Device {serial_number} successfully SENT to Flask queue.")
+            return True, "Successfully sent to Flask queue."
+        else:
+            # Если Flask-сервер вернул ошибку или некорректный статус
+            error_details = response.json() if response.text else response.status_code
+            logger.error(f"ERROR {serial_number} not sent to Flask: Status {response.status_code}, Details: {error_details}")
+            return False, f"Failed to send to Flask queue (Status: {response.status_code})"
 
-    if success:
-        logger.info(f"OK! Device {serial_number} success add in InvenTree: {message}")
-    else:
-        logger.info(f"ERROR {serial_number} not add in InvenTree: {message}")
+    except requests.exceptions.RequestException as e:
+        # Ошибка соединения (сервер не запущен, неверный адрес)
+        logger.error(f"ERROR {serial_number} failed connection to Flask: {e}")
+        return False, f"Failed to connect to Flask queue server: {e}"
+    # -------------------------------------------------------------------------
 
 
 def validate_barcode(barcode):
+# ... (Эта функция остается без изменений) ...
     """Валидация штрихкода"""
     if not barcode:
         return False, "Barcode is required"
@@ -54,37 +86,26 @@ def process_manufacturing(data):
     Обработка данных производства
     """
     try:
-        # Получаем данные
+        # ... (Проверка топика и парсинг payload остаются без изменений)
         logger.info(f"Получены данные: {data}")
-
-        # Проверяем топик
         topic = data.get('topic', '')
         logger.info(f"Данные получены из топика: {topic}")
         
-        # Проверка топика
         topic_allowed = False
         for allowed_topic in ALLOWED_TOPICS:
             if topic == allowed_topic or topic.startswith(allowed_topic):
                 topic_allowed = True
                 break
-                
+        
         if not topic_allowed:
             logger.warning(f"Данные получены из неразрешенного топика: {topic}")
-            result = {
-                'error': 'Unauthorized topic',
-                'topic': topic,
-                'allowed_topics': ALLOWED_TOPICS
-            }
+            result = {'error': 'Unauthorized topic', 'topic': topic, 'allowed_topics': ALLOWED_TOPICS}
             print(json.dumps(result))
             return 1
 
-        # Парсим payload как JSON строку
         payload_str = data.get('payload', '{}')
         payload_json = json.loads(payload_str)
-
-        # Извлекаем штрихкод (серийный номер)
         barcode = payload_json.get('msg', '').strip()
-        
         logger.info(f"Парсинг: barcode={barcode}, topic={topic}")
 
         # Валидация штрихкода
@@ -93,10 +114,18 @@ def process_manufacturing(data):
             logger.warning(error_msg)
             print(json.dumps({'error': error_msg}))
             return 1
-        #Add new device to InvenTree
-        process_new_device(barcode)
-
-        # Записываем дату изготовления
+            
+        # --- ИЗМЕНЕНА: Вызываем новую функцию отправки и убираем time.sleep(3) ---
+        # time.sleep(3) # <-- Эту задержку теперь обрабатывает очередь на Flask-сервере
+        success_send, send_message = process_new_device(barcode)
+        
+        if not success_send:
+            # Если отправка в Flask-очередь не удалась, останавливаемся
+            logger.error(f"Не удалось отправить серийный номер в Flask-очередь: {send_message}")
+            print(json.dumps({'error': f'Failed to send to Flask queue: {send_message}'}))
+            return 1
+            
+        # Записываем дату изготовления (логика RadiacodeManager)
         manager = RadiacodeManager()
         success = manager.WriteManufacturingDate(barcode)
         operation = 'manufacturing'
@@ -110,7 +139,7 @@ def process_manufacturing(data):
                 'topic': topic,
                 'operation': operation,
                 date_field: datetime.now().isoformat(),
-                'message': f'{operation.capitalize()} date recorded successfully'
+                'message': f'{operation.capitalize()} date recorded successfully and sent to Flask queue' # Обновляем сообщение
             }
             print(json.dumps(response_data))
             return 0
@@ -130,12 +159,11 @@ def process_manufacturing(data):
 
 
 if __name__ == '__main__':
+
     try:
-        # Читаем данные из аргумента (от webhook)
         if len(sys.argv) > 1:
             data = json.loads(sys.argv[1])
         else:
-            # Или из stdin
             data = json.load(sys.stdin)
         
         exit_code = process_manufacturing(data)
